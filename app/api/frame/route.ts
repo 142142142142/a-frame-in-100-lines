@@ -16,6 +16,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       console.error(err);
     }
   }
+  console.log(req.json());
 
   return new NextResponse(`<!DOCTYPE html><html><head>
     <meta property="fc:frame" content="vNext" />
